@@ -1,25 +1,39 @@
 # First Aid App
 
-A simple web application for first aid information and guidance.
+This project was converted to a React + Vite application. I backed up the original static files in the `backup/` folder.
 
-## Project Structure
+## Project structure (important files)
 
 ```
 firstaid-app/
-├── index.html
-├── css/
-│   └── style.css
-└── js/
-    └── main.js
+├── index.html          # Vite entry (mounts React app)
+├── package.json
+├── src/
+│   ├── main.jsx
+│   ├── App.jsx
+│   └── index.css
+├── backup/             # original static files saved here
 ```
 
-## Getting Started
+## Run locally
 
-1. Clone this repository
-2. Open `index.html` in your web browser
+1. Install dependencies
 
-## Development
+```powershell
+npm install
+```
 
-- HTML files are in the root directory
-- CSS files are in the `css` directory
-- JavaScript files are in the `js` directory
+2. Start dev server
+
+```powershell
+npm run dev
+```
+
+Visit the URL printed by Vite (usually http://localhost:5173).
+
+## Notes
+
+- The original `index.html`, `css/style.css`, `js/main.js`, and `README.md` were copied to `backup/`.
+- Use `git status` / `git log` to review commits before pushing further changes.
+
+Happy hacking!
